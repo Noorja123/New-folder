@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 25px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.custom-checkbox {
+    ::ng-deep .mat-mdc-checkbox {
+      display: flex;
+      align-items: center;
+    }
+  
+    ::ng-deep .mdc-checkbox {
+      border-radius: 50%; /* Makes it circular */
+    }
+  
+    ::ng-deep .mdc-checkbox .mdc-checkbox__background {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #1976d2; /* Blue border like a radio button */
+      background-color: transparent;
+    }
+  
+    ::ng-deep .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background {
+      background-color: #1976d2; /* Fills when checked */
+    }
+  }
+  .btn-icon{
+    background:none;
+    border: none;
+  }
